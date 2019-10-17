@@ -1,0 +1,49 @@
+
+#spring:
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/test?serverTimezone=UTC
+#    username: root
+#    password: 123
+#    driver-class-name: com.mysql.jdbc.Driver
+
+#spring:
+#  datasource:
+#    test01:
+#      url: jdbc:mysql://localhost:3306/test01?serverTimezone=UTC
+#      username: root
+#      password: 123
+#      driver-class-name: com.mysql.jdbc.Driver
+#
+#    test02:
+#      url: jdbc:mysql://localhost:3306/test02?serverTimezone=UTC
+#      username: root
+#      password: 123
+#      driver-class-name: com.mysql.jdbc.Driver
+
+
+spring:
+  datasource:
+    test01:
+      url: jdbc:mysql://localhost:3306/test01?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
+      username: root
+      password: 123
+      minPoolSize: 3
+      maxPoolSize: 25
+      maxLifetime: 20000
+      borrowConnectionTimeout: 30
+      loginTimeout: 30
+      maintenanceInterval: 60
+      maxIdleTime: 60
+
+
+    test02:
+      url: jdbc:mysql://localhost:3306/test02?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
+      username: root
+      password: 123
+      minPoolSize: 3
+      maxPoolSize: 25
+      maxLifetime: 20000
+      borrowConnectionTimeout: 30
+      loginTimeout: 30
+      maintenanceInterval: 60
+      maxIdleTime: 60
